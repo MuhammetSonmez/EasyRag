@@ -12,7 +12,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** powered **LLM** appli
 
 ## Installation
 ### Requirements
-- Python 3.9+
+- Python 3.10+
 - FastAPI
 - LangChain
 - FAISS
