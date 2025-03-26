@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #b33c3c; 
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: #b33c3c;
+    outline: none;
+  }
+  
+  button {
+    background-color: #b33c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9e2e2e;
+  }
+  
+  .alert {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #b33c3c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+  /* thx gpt :)*/
+  #liveResponseBox {
+    max-width: 100%;      /* Prevent the content from going beyond the container */
+    overflow-x: auto;     /* Allow horizontal scrolling if content overflows */
+    white-space: pre-wrap; /* Ensure the content wraps within the div */
+    word-wrap: break-word; /* Allow breaking words to avoid overflow */
+    padding: 10px;        /* Optional padding for better appearance */
+    box-sizing: border-box; /* Make sure padding doesn't affect the width */
+
+}

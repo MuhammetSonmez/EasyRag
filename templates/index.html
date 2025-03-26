@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy RAG</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', path='/css/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', path='/js/script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Easy RAG</h1>
+
+      <div class="mb-3">
+        <label for="fileInput" class="form-label">
+          Upload a file for the RAG model:
+        </label>
+        <input type="file" class="form-control" id="fileInput" />
+        <button class="mt-2" onclick="uploadFile()">Upload</button>
+      </div>
+
+      <div id="loader" class="loader" style="display: none"></div>
+
+      <hr />
+
+      <div class="mb-3">
+        <label for="questionInput" class="form-label">Ask a Question:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="questionInput"
+          placeholder="Type your question..."
+        />
+        <button class="mt-2" onclick="sendQuestion()">Submit</button>
+      </div>
+      <pre>
+      <div
+        id="liveResponseBox"
+        class="alert alert-secondary"
+        style="display: none"
+      ></div>
+    </pre>
+    </div>
+  </body>
+</html>
