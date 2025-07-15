@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     CHUNK_OVERLAP: int = 20
     WEBSOCKET_URL: str = "/ws"
     API_PREFIX: str = "/api"
+    HUGGINGFACE_TOKEN: str
+
 
     class Config:
         env_file = ".env"
